@@ -1,6 +1,10 @@
 # d-bot-m2m-launcher
 m2m agv student project ros launcher repo
 
+# development environment setup
+
+Ubuntu 20.04 and ros1 noetic or docker with noetic desktop full image.
+
 
 
 ## project ros packages
