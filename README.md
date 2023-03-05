@@ -7,7 +7,7 @@ M2M AGV student project ros launcher repo
 ### Ros1 noetic ubuntu
 
 install Ubuntu 20.04\
-<https://www.releases.ubuntu.com/20.04/>
+<https://www.releases.ubuntu.com/20.04/>¸\
 and ros1 noetic\
 <https://wiki.ros.org/noetic>
 
@@ -19,7 +19,7 @@ Start docker container with ubuntu 20.04 and ros1 noetic desktop edition.
 
 Using container\
 Run following command in folder which contains packages project uses.\
-docker run -v $(pwd):/catkin_ws/src -it -p8080:8080 osrf/ros:noetic-desktop-full  
+docker run -v $(pwd):/catkin_ws/src -it -p8080:8080 osrf/ros:noetic-desktop-full\  
 
 Starting roscore\
 roscore  
