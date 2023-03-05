@@ -19,8 +19,8 @@ Start docker container with ubuntu 20.04 and ros1 noetic desktop edition.
 
 Using container\
 Run following command in folder which contains packages project uses.\
-docker run -v $(pwd):/catkin_ws/src -it -p8080:8080 osrf/ros:noetic-desktop-full\  
-
+docker run -v $(pwd):/catkin_ws/src -it -p8080:8080 osrf/ros:noetic-desktop-full
+\
 Starting roscore\
 roscore  
 
