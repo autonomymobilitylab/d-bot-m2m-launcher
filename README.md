@@ -1,10 +1,10 @@
-# d-bot-m2m-launcher
+# DBot-m2m-launcher
 
-m2m agv student project ros launcher repo
+M2M AGV student project ros launcher repo
 
-## development environment setup
+## Development environment setup
 
-### ros1 noetic ubuntu
+### Ros1 noetic ubuntu
 
 install Ubuntu 20.04
 <https://www.releases.ubuntu.com/20.04/>
@@ -13,13 +13,22 @@ and ros1 noetic
 
 ### ros1 noetic docker
 
-install docker
+Install docker  
 <https://www.docker.com/>
-start docker container with ubuntu 20.04 and ros1 noetic desktop edition.
-Run following command in folder which contains packages project uses. 
-docker run -v $(pwd):/catkin_ws/src -it -p8080:8080 osrf/ros:noetic-desktop-full
+Start docker container with ubuntu 20.04 and ros1 noetic desktop edition.  
 
-## project ros packages
+Using container
+Run following command in folder which contains packages project uses. 
+docker run -v $(pwd):/catkin_ws/src -it -p8080:8080 osrf/ros:noetic-desktop-full  
+
+Starting roscore
+roscore  
+
+Opening new shells inside container
+docker exec -it mycontainer bash  
+
+
+## Project ros packages
 
 1. <https://github.com/autonomymobilitylab/d-bot-m2m-obstacle-detection>
 2. <https://github.com/autonomymobilitylab/d-bot-m2m-communication>
@@ -35,4 +44,3 @@ TODO
 
 ## ROS and custom Packages
 Visualizations contain starting ros package architecture.
-
