@@ -21,10 +21,13 @@ Using container\
 Run following command in folder which contains packages project uses.\
 docker run -v $(pwd):/catkin_ws/src -it -p8080:8080 osrf/ros:noetic-desktop-full
 \
-Starting roscore\
-roscore  
 
-Opening new shells inside container\
+Sourcing and Starting roscore\
+source /opt/ros/noetic/setup.bash
+\
+roscore
+
+Opening new shells inside container
 docker exec -it mycontainer bash  
 
 
