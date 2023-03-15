@@ -25,10 +25,19 @@ docker run -v $(pwd):/catkin_ws/src -it -p8080:8080 osrf/ros:noetic-desktop-full
 Sourcing and Starting roscore\
 source /opt/ros/noetic/setup.bash
 \
+cd /catkin_ws/src
+catkin_init_workspace
+cd /catkin_ws
+catkin_make
 roscore
 
 Opening new shells inside container
 docker exec -it mycontainer bash  
+
+in new terminal
+source /catkin_ws/devel/setup.bash
+for example lauching task maanger
+roslaunch d-bot-m2m-task-executor task_manager.launch
 
 
 ## Project ros packages
@@ -44,6 +53,11 @@ TODO
 
 ## Starting dbot ros
 TODO
+
+## development start commands
+for example lauching task maanger
+roslaunch d-bot-m2m-task-executor task_manager.launch
+roslaunch d-bot-m2m-movement movement.launch
 
 ## ROS and custom Packages
 Visualizations contain starting ros package architecture.
