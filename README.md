@@ -18,27 +18,37 @@ Install docker
 Start docker container with ubuntu 20.04 and ros1 noetic desktop edition.  
 
 Using container\
-Run following command in folder which contains packages project uses.\
-docker run -v $(pwd):/catkin_ws/src -it -p8080:8080 osrf/ros:noetic-desktop-full
-\
+Run following command in folder which contains packages project uses.  
+```bash
+docker run -v $(pwd):/catkin_ws/src -it -p8080:8080 osrf/ros:noetic-desktop-full  
+```
+Sourcing and Starting roscore  
 
-Sourcing and Starting roscore\
-source /opt/ros/noetic/setup.bash
-\
-cd /catkin_ws/src
-catkin_init_workspace
-cd /catkin_ws
-catkin_make
-roscore
+```bash
+source /opt/ros/noetic/setup.bash  
+cd /catkin_ws/src  
+catkin_init_workspace  
+cd /catkin_ws  
+catkin_make  
+roscore  
+```
 
 Opening new shells inside container
+
+```bash
 docker exec -it mycontainer bash  
+```
+
+install pcan (linux) drivers
+<https://python-can.readthedocs.io/en/master/installation.html>
 
 in new terminal
-source /catkin_ws/devel/setup.bash
-for example lauching task maanger
-roslaunch d-bot-m2m-task-executor task_manager.launch
 
+```bash
+source /catkin_ws/devel/setup.bash
+for example lauching task manager
+roslaunch d-bot-m2m-task-executor task_manager.launch
+```
 
 ## Project ros packages
 
