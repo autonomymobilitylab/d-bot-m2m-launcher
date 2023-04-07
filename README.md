@@ -62,6 +62,15 @@ roslaunch d-bot-m2m-task-executor task_manager.launch
 TODO
 
 ## Starting dbot ros
+run below commands id you want to add logging to dbot
+```bash
+# Linux
+docker compose up
+# windows
+docker-compose up
+```
+This will start postgres database in docker and runs flyway database migrations to create logging table.
+
 TODO
 
 ## development start commands
