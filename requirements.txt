@@ -1,0 +1,12 @@
+#common
+python-dotenv  
+
+# task executor package
+psycopg2
+
+# communications package
+requests 
+requests_oauthlib
+websockets
+opcua==0.98.7
+
