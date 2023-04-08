@@ -62,12 +62,12 @@ roslaunch d-bot-m2m-task-executor task_manager.launch
 TODO
 
 ### Mapping
-<https://github.com/SMRT-AIST/fast_gicp>
-<https://github.com/koide3/hdl_global_localization>
-<https://github.com/koide3/hdl_graph_slam>
-<https://github.com/koide3/hdl_localization>
-<https://github.com/koide3/ndt_omp>
-<https://github.com/ros-drivers/velodyne>
+<https://github.com/SMRT-AIST/fast_gicp>  
+<https://github.com/koide3/hdl_global_localization>  
+<https://github.com/koide3/hdl_graph_slam>  
+<https://github.com/koide3/hdl_localization>  
+<https://github.com/koide3/ndt_omp>  
+<https://github.com/ros-drivers/velodyne>  
 
 ### install dependecies
 ```bash
